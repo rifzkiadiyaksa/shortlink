@@ -12,48 +12,48 @@ jobs:
     steps:
       - name: Verifikasi Domains
         run: |
-          curl -X GET "https://shortlink-gold.vercel.app/api/cron/domains/verify"
+          curl -X GET "https://shortlink-git-main-rifzki-adiyaksas-projects.vercel.app/api/cron/domains/verify"
 
       - name: Hapus Cache Usage
         run: |
-          curl -X GET "https://shortlink-gold.vercel.app/api/cron/usage"
+          curl -X GET "https://shortlink-git-main-rifzki-adiyaksas-projects.vercel.app/api/cron/usage"
 
       - name: Pembersihan Database
         run: |
-          curl -X GET "https://shortlink-gold.vercel.app/api/cron/cleanup"
+          curl -X GET "https://shortlink-git-main-rifzki-adiyaksas-projects.vercel.app/api/cron/cleanup"
 
       - name: Hapus Email Sekali Pakai
         run: |
-          curl -X GET "https://shortlink-gold.vercel.app/api/cron/disposable-emails"
+          curl -X GET "https://shortlink-git-main-rifzki-adiyaksas-projects.vercel.app/api/cron/disposable-emails"
 
       - name: Perbarui Nilai Tukar
         run: |
-          curl -X GET "https://shortlink-gold.vercel.app/api/cron/fx-rates"
+          curl -X GET "https://shortlink-git-main-rifzki-adiyaksas-projects.vercel.app/api/cron/fx-rates"
 
       - name: Kirim Payouts
         run: |
-          curl -X GET "https://shortlink-gold.vercel.app/api/cron/payouts"
+          curl -X GET "https://shortlink-git-main-rifzki-adiyaksas-projects.vercel.app/api/cron/payouts"
 
       - name: Agregasi Klik
         run: |
-          curl -X GET "https://shortlink-gold.vercel.app/api/cron/aggregate-clicks"
+          curl -X GET "https://shortlink-git-main-rifzki-adiyaksas-projects.vercel.app/api/cron/aggregate-clicks"
 
       - name: Picu Penarikan
         run: |
-          curl -X GET "https://shortlink-gold.vercel.app/api/cron/trigger-withdrawal"
+          curl -X GET "https://shortlink-git-main-rifzki-adiyaksas-projects.vercel.app/api/cron/trigger-withdrawal"
 
       - name: Ringkasan Program Partner
         run: |
-          curl -X GET "https://shortlink-gold.vercel.app/api/cron/partner-program-summary"
+          curl -X GET "https://shortlink-git-main-rifzki-adiyaksas-projects.vercel.app/api/cron/partner-program-summary"
 
       - name: Pengingat Payouts Partner
         run: |
-          curl -X GET "https://shortlink-gold.vercel.app/api/cron/payouts/reminders/partners"
+          curl -X GET "https://shortlink-git-main-rifzki-adiyaksas-projects.vercel.app/api/cron/payouts/reminders/partners"
 
       - name: Pengingat Payouts Pemilik Program
         run: |
-          curl -X GET "https://shortlink-gold.vercel.app/api/cron/payouts/reminders/program-owners"
+          curl -X GET "https://shortlink-git-main-rifzki-adiyaksas-projects.vercel.app/api/cron/payouts/reminders/program-owners"
 
       - name: Online Presence Youtube
         run: |
-          curl -X GET "https://shortlink-gold.vercel.app/api/cron/online-presence/youtube"
+          curl -X GET "https://shortlink-git-main-rifzki-adiyaksas-projects.vercel.app/api/cron/online-presence/youtube"
